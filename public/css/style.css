@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-color: rgb(5, 54, 79);
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    margin: 0 auto;
+}
+h3{
+    font-size: 20px;
+    color: red;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+table{
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid black;
+    padding: 20px;
+    border-collapse: collapse;
+}
+table td{
+    border: 1px solid tomato;
+    text-align: center;
+}
+table thead td{
+    padding: 5px;
+    background-color: tomato;
+    color: white;
+    font-weight: 700;
+}
+table tbody td{
+    font-weight: 700;
+    padding: 10px;
+
+}
+table tbody tr:nth-child(even){
+    background-color: rgb(157, 157, 158);
+    color:aliceblue;
+}
+
+.btn{
+   
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+.g{
+    background-color: green;
+}
+p{
+    text-align: left;
+    padding:5px;
+}
+p a{
+    text-decoration: none;
+    background-color: tomato;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+}
+.form-group{
+    width: 100%;
+    margin-left: 100px;
+    margin-top: 50px;
+    padding:5px;
+}
+label,input{
+display: block;
+padding: 10px;
+}
+.form-group button , .btn2{
+    border: none;
+    padding: 5px 10px;
+    font-size: 20px;
+    background-color: blue;
+    margin-right: 50px;
+}
+.alert{
+    display: block;
+    padding: 10px;
+    color: green;
+    font-size: 20px;
+    width: 100%;
+    font-weight: 600;
+    text-align: center;
+}

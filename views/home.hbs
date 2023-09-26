@@ -1,0 +1,28 @@
+<h3>management system</h3>
+<p><a href="/adduser">Add users</a></p>
+<table>   
+  <thead>
+    <tr>
+      <td>#</td>
+      <td>name</td>
+      <td>age</td>
+      <td>city</td>
+      <td>edit</td>
+      <td>delete</td>
+    </tr>
+  </thead>
+  <tbody>
+   {{#each rows}}
+   <tr>
+   <td>{{this.ID}}</td>
+   <td>{{this.NAME}}</td>
+   <td>{{this.AGE}}</td>
+   <td>{{this.CITY}}</td>
+   <td><a class="btn g" href="/edituser/{{this.ID}}" >Edit</a></td>
+   <td><a onclick="return confirm('are you sure?')" class="btn r" href="/deleteuser/{{this.ID}}">Delete</a></td>
+   </tr>
+   {{/each}}
+    
+   
+  </tbody>
+</table>
