@@ -103,9 +103,8 @@ exports.edit = (req, res) => {
 exports.delete = (req, res) => {
     con.getConnection((err, connection) => {
         if (err) throw err
-
         let id = req.params.id;
-        connection.query("delete from user where id=?",[id],(err, rows) => {
+        connection.query("delete from users where id=?", [id], (err, rows) => {
             connection.release();
             if (!err) {
                 res.redirect("/");
@@ -117,4 +116,5 @@ exports.delete = (req, res) => {
         });
 
     }
-    )}
+    )
+}
